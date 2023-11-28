@@ -3,9 +3,11 @@ from socketserver import TCPServer
 import json
 
 class FitJoyHandler(SimpleHTTPRequestHandler):
-    users = {}  # For simplicity, using a dictionary to store user data.
+    # For simplicity, using a dictionary to store user data.
+    users = {}
 
     def do_GET(self):
+        # Respond to a GET request with fitness-related features.
         self.send_response(200)
         self.send_header("Content-type", "application/json")
         self.end_headers()
@@ -26,6 +28,7 @@ class FitJoyHandler(SimpleHTTPRequestHandler):
         self.wfile.write(json.dumps(response_data).encode())
 
     def do_POST(self):
+        # Handle user registration data sent via POST request.
         content_length = int(self.headers['Content-Length'])
         post_data = self.rfile.read(content_length)
         user_data = json.loads(post_data.decode())
@@ -43,6 +46,7 @@ class FitJoyHandler(SimpleHTTPRequestHandler):
         self.wfile.write(json.dumps(response_data).encode())
 
 if __name__ == "__main__":
+    # Run the server on port 8000
     with TCPServer(("", 8000), FitJoyHandler) as httpd:
         print("Server started on port 8000.")
         httpd.serve_forever()
