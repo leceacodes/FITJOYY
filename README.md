@@ -1,4 +1,4 @@
-# FitJoy, Fitness Application
+# FitJoy, Fitness Application Report
 
 Welcome to FitJoy, your ultimate fitness companion designed to bring joy to your wellness journey.
 
