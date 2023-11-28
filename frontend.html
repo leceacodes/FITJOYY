@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitJoy App</title>
+    <!-- Add any additional styles or links to external stylesheets here -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f7f7f7;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        #featuresContainer {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .featureCard {
+            width: 300px;
+            padding: 20px;
+            margin: 15px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .featureCard:hover {
+            transform: scale(1.05);
+        }
+        .registrationForm {
+            margin-top: 30px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            margin: auto;
+        }
+        label {
+            margin-bottom: 8px;
+        }
+        input {
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to FitJoy App</h1>
+    
+    <!-- Features Section -->
+    <div id="featuresContainer"></div>
+
+    <!-- User Registration Section -->
+    <div class="registrationForm">
+        <h2>User Registration</h2>
+        <form id="userForm">
+            <label for="userId">User ID:</label>
+            <input type="text" id="userId" name="userId" required>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <!-- Include your JavaScript code at the end to dynamically populate features -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // JavaScript code to fetch and dynamically populate features
+            const featuresContainer = document.getElementById("featuresContainer");
+
+            // Mock data for fitness features
+            const mockFeatures = {
+                "Fitness Goals": "Set and track personalized fitness goals.",
+                "Workout Routines": "Access diverse workout routines for all fitness levels.",
+                "Nutrition Recommendations": "Receive tailored nutrition recommendations based on your goals.",
+                "Social Challenges": "Connect with friends, share achievements, and participate in friendly fitness challenges."
+            };
+
+            // Dynamically create feature cards
+            Object.entries(mockFeatures).forEach(([feature, description]) => {
+                const featureCard = document.createElement("div");
+                featureCard.className = "featureCard";
+                featureCard.innerHTML = `
+                    <h3>${feature}</h3>
+                    <p>${description}</p>
+                `;
+                featuresContainer.appendChild(featureCard);
+            });
+
+            // Event listener for user registration form
+            document.getElementById("userForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+                const userId = document.getElementById("userId").value;
+                const username = document.getElementById("username").value;
+
+                // Do something with user registration data, e.g., send it to the backend
+                // (Note: You may need to add additional code for this part)
+            });
+        });
+    </script>
+</body>
+</html
