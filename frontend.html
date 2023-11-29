@@ -86,7 +86,6 @@
     </div>
 
     <!-- Include your JavaScript code at the end to dynamically populate features -->
-
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             // JavaScript code to fetch and dynamically populate features
@@ -117,9 +116,22 @@
                 const userId = document.getElementById("userId").value;
                 const username = document.getElementById("username").value;
 
-                // Do something with user registration data, e.g., send it to the backend
-                // (Note: You may need to add additional code for this part)
+                // Log user registration data to the console
+                console.log("User ID:", userId);
+                console.log("Username:", username);
+
+                // Display a confirmation message
+                const confirmationMessage = document.createElement("p");
+                confirmationMessage.textContent = `User registration successful! ID: ${userId}, Username: ${username}`;
+                document.body.appendChild(confirmationMessage);
+
+                // Clear the form fields
+                document.getElementById("userId").value = "";
+                document.getElementById("username").value = "";
             });
+
+            // Add a console.log statement
+            console.log("JavaScript is running!");
         });
     </script>
 </body>
