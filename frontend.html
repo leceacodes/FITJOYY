@@ -31,7 +31,6 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
-            cursor: pointer;
         }
         .featureCard:hover {
             transform: scale(1.05);
@@ -92,32 +91,30 @@
             // JavaScript code to fetch and dynamically populate features
             const featuresContainer = document.getElementById("featuresContainer");
 
-            // Features data
-            const featuresData = {
+            // Mock data for fitness features
+            const mockFeatures = {
                 "Fitness Goals": "Set and track personalized fitness goals.",
-                "Diverse Workout Routines": "Access a variety of workout routines for all fitness levels.",
-                "Tailored Nutrition Recommendations": "Receive personalized nutrition recommendations based on your goals.",
-                "Social Connection": "Connect with friends, share achievements, and participate in friendly fitness challenges.",
-                "Positive Mindset": "Promote a positive mindset by celebrating progress and fostering a supportive community.",
-                "User Authentication": "Register and log in to save and track your fitness journey.",
-                "Personalized Workouts": "Get workout recommendations based on your fitness level and preferences.",
-                "Progress Tracking": "Track your fitness progress over time.",
-                "User-Friendly Interface": "Enjoy a user-friendly interface for an accessible and enjoyable experience."
+                "Workout Routines": "Access diverse workout routines for all fitness levels.",
+                "Nutrition Recommendations": "Receive tailored nutrition recommendations based on your goals.",
+                "Social Challenges": "Connect with friends, share achievements, and participate in friendly fitness challenges."
             };
 
             // Dynamically create feature cards
-            Object.entries(featuresData).forEach(([feature, description]) => {
+            Object.entries(mockFeatures).forEach(([feature, description]) => {
                 const featureCard = document.createElement("div");
                 featureCard.className = "featureCard";
                 featureCard.innerHTML = `
                     <h3>${feature}</h3>
                     <p>${description}</p>
                 `;
-                featureCard.addEventListener("click", function() {
-                    // Customize the action when a card is clicked
-                    console.log(`Clicked on ${feature} card!`);
-                });
                 featuresContainer.appendChild(featureCard);
+
+                // Add a click event listener to each feature card
+                featureCard.addEventListener("click", function() {
+                    console.log(`Clicked on ${feature} card!`);
+                    // Customize the action when a card is clicked
+                    // For example, you can open a new page, show more details, etc.
+                });
             });
 
             // Event listener for user registration form
