@@ -61,8 +61,7 @@ The FitJoy Fitness Application includes the following functionalities:
 - Social Challenges: Engage with friends, join fitness communities, and stay motivated through friendly challenges.
 - Mindfulness Meditation: Enhance your overall well-being with guided mindfulness meditation sessions.
 
-![Screenshot (216)](https://github.com/leceacodes/FITJOYY/assets/148807945/9328e0de-ba2b-40e9-974c-6cf0245dded6)
-
+![Screenshot 2023-11-28 201159](https://github.com/leceacodes/FITJOYY/assets/148807945/2c13e251-4f88-452d-b2d8-3fd44c4efaef)
 
 ### Testing
 
