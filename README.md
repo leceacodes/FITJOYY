@@ -32,6 +32,7 @@ To install and use FitJoy, follow these simple steps:
 
 The FitJoy project is organized into the following directory structure:
 
+![image](https://github.com/leceacodes/FITJOYY/assets/148807945/8175086b-af84-43e9-a8cd-5d384da6aa1b)
 
 - **backend:** This directory contains scripts related to the backend functionality of the FitJoy application. The `backend.py` file serves as the main script for the backend server, handling fitness-related features.
 
