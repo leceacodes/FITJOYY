@@ -14,14 +14,11 @@ class FitJoyHandler(SimpleHTTPRequestHandler):
 
         # Define fitness-related features
         features = {
-            "fitness_goals": "Set and track personalized fitness goals.",
-            "workout_routines": "Access diverse workout routines for all fitness levels.",
-            "nutrition_recommendations": "Receive tailored nutrition recommendations.",
-            "social_elements": "Connect with friends, share achievements, and join fitness challenges.",
-            "positive_mindset": "Promote a positive mindset by celebrating progress and fostering a supportive community.",
+            "fitness_goals": "Write down some of your fitness goals in a journal. Once you complete it, check it off the box and it will feel satisfying.",
+            "workout_routines": "You can access tons of workouts on Youtube for free. When you finish one you will feel proud of yourself for getting it done.",
+            "nutrition_recommendations": "Incorporate lot of vegetables in your diet, fruits, and cut excess sugars. Find a diet plan that matches your dietary restrictions and fitness goals. Eating cleaner sets you up for success.",
+            "social_challenges": "Connect with friends, share achievements, and participate in friendly fitness challenges.",
             "user_authentication": "Register and log in to save and track your fitness journey.",
-            "personalized_workouts": "Get personalized workout recommendations based on your fitness level and preferences.",
-            "progress_tracking": "Track your fitness progress over time.",
         }
 
         response_data = {"features": features}
