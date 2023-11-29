@@ -6,10 +6,10 @@ Welcome to FitJoy, your ultimate fitness companion designed to bring joy to your
 
 The primary objectives of the FitJoy Fitness Application are:
 
-- It provides users with a broad platform to set and track personalized fitness goals.
-- Offers access to unique workout routines suitable for all fitness levels.
-- Delivers custom nutrition recommendations based on individual goals.
-- Fosters a supportive community through social elements, allowing users to connect, share achievements, and participate in friendly fitness challenges.
+- Provides users with a broad platform to help with personalized fitness goals using advice.
+- Offers advice for finding workout routines suitable for all fitness levels.
+- Delivers nutrition recommendations.
+- Provides advice on how to combat social challenges in the fitness world.
 
 ## Significance of the Project 
 
@@ -26,13 +26,12 @@ To install and use FitJoy, follow these simple steps:
 
 1. Clone the GitHub repository.
 2. Navigate to the 'backend' folder and run 'python backend.py' to start the backend server.
-3. Open 'frontend.html' in your browser to explore FitJoy.
+3. Open 'frontend.html' in your browser (Best use: Chrome) to explore FitJoy.
 
 ## Project Structure
 
 The FitJoy project is organized into the following directory structure:
 
-![Screenshot 2023-11-28 201258](https://github.com/leceacodes/FITJOYY/assets/148807945/b663aba5-6158-416e-948b-756da255d133)
 
 - **backend:** This directory contains scripts related to the backend functionality of the FitJoy application. The `backend.py` file serves as the main script for the backend server, handling fitness-related features.
 
@@ -46,35 +45,51 @@ This structure ensures a clear separation between the frontend and backend compo
 
 The FitJoy Fitness Application includes the following functionalities:
 
-- Personalized Fitness Plans: Receive custom workout and nutrition plans based on your fitness goals.
-- Progress Tracking: Monitor and celebrate your fitness milestones with easy-to-use tracking tools.
-- Social Challenges: Engage with friends, join fitness communities, and stay motivated through friendly challenges.
-- Mindfulness Meditation: Enhance your overall well-being with guided mindfulness meditation sessions.
+- 'Fitness Goals', provides advice for fitness goals: "Write down some of your fitness goals in a journal. Once you complete it, check it off the box and it will feel satisfying."
+- 'Workout Routines', provides advice for finding workouts: "You can access tons of workouts on Youtube for free. When you finish one you will feel proud of yourself for getting it done."
+- 'Nutrition Recommendations', provides advice for nutrition: "Incorporate lot of vegetables in your diet, fruits, and cut excess sugars. Find a diet plan that matches your dietary restrictions and fitness goals. Eating cleaner sets you up for success."
+- 'Social Challenges', provides advice to combat social challenges: "Connect with friends, share achievements, and participate in friendly fitness challenges."
 
-![Screenshot 2023-11-28 201159](https://github.com/leceacodes/FITJOYY/assets/148807945/2c13e251-4f88-452d-b2d8-3fd44c4efaef)
+![Screenshot 2023-11-28 231704](https://github.com/leceacodes/FITJOYY/assets/148807945/0946f10e-5529-447c-ba6f-be17623015d3)
+
 
 ### Testing
 
-We rigorously tested each functionality to ensure a seamless user experience. Here are the results:
+We tested each functionality to ensure a seamless user experience. Here are the results:
 
-- **Personalized Fitness Plans:** Verified accuracy of generated plans by comparing them with industry-standard recommendations. Our challenge was to fine-tune the algorithm to consider individual fitness levels, preferences, and any health restrictions. After several iterations and research found within fitness experts, we achieved an accurate and personalized planning system.
+- **Fitness Goals:** When the box is clicked it provided the expected advice. 
 
-- **Progress Tracking:** Checked the reliability of tracking tools by simulating various fitness scenarios. One challenge was ensuring real-time synchronization across devices. We implemented a robust data synchronization mechanism, allowing users to seamlessly track their progress from any device.
+ ![image](https://github.com/leceacodes/FITJOYY/assets/148807945/4e343449-c617-493b-b6f4-a604fdecaf70)
 
-- **Social Challenges:** Conducted user acceptance testing with a focus group to evaluate the effectiveness of social features. A challenge was to create a sense of community and motivation. We incorporated interactive challenges, leaderboards, and virtual rewards, resulting in a highly engaging social experience.
+- **Workout Routines:**  When the box is clicked it provided the correct advice that correlates with workouts. 
 
-- **Mindfulness Meditation:** Tested the meditation sessions on different devices to guarantee compatibility. The challenge here was to provide a consistent and immersive experience across various platforms. We optimized audio and visual elements, ensuring a soothing and consistent experience regardless of the device used.
+![image](https://github.com/leceacodes/FITJOYY/assets/148807945/6293dbcd-d8ce-49e4-99ce-eadaee2fdf00)
+
+- **Nutrition Recommendations:**  When the box is clicked it provided the correct advice for nutritional recommendations. 
+
+![image](https://github.com/leceacodes/FITJOYY/assets/148807945/afa79cf5-cd13-42c6-b464-76527d38ff76)
+
+- **Social Challenges:**  When the box is clicked it provided the correct advice for social challenges that may come up when joining the fitness community.
+
+![image](https://github.com/leceacodes/FITJOYY/assets/148807945/96a9d46e-4bc2-4f94-8d12-f0f835556cd5)
+
+- **User information:**  Provides text boxes to put in the user information. After they click register, the box stores it.
+  
+![image](https://github.com/leceacodes/FITJOYY/assets/148807945/bdb2fdbc-76dd-418e-abcb-b79161946c2c)
 
 ## Discussion and Conclusions 
 
 In the course of developing FitJoy, we encountered some challenges and limitations:
 
 - **Challenge 1: Integration Complexity**  
-  - Integrating various features seamlessly posed challenges due to diverse functionalities. We implemented a modular and scalable architecture to address this, ensuring smooth integration and future extensibility.
+  - Integrating various features created challenges due to diverse functionalities. We implemented a modular and scalable architecture to address this, ensuring smooth integration and future extensibility.
 
 - **Challenge 2: User Onboarding Optimization**  
   - Streamlining the user onboarding process was crucial for user retention. We conducted usability studies and implemented a step-by-step onboarding flow, resulting in increased user engagement.
 
+- **Challenge 3: Visuals**
+   - We had trouble finding how to create the app aspect of the project, but ultimately decided to use some javascript, whih we had some prior knowledge of.
+     
 Despite these challenges, the project allowed us to apply the course learnings in a practical context, reinforcing our understanding of software development for enhancing happiness.
 
 FitJoy is the result of collaborative efforts to bring happiness to the fitness realm. Join us in promoting a positive and joyful approach to wellness.
