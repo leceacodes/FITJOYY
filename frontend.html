@@ -36,6 +36,14 @@
         .featureCard:hover {
             transform: scale(1.05);
         }
+        .featureDetails {
+            display: none;
+            padding: 20px;
+            margin: 15px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
         /* Styles for the user registration form */
         .registrationForm {
             margin-top: 30px;
@@ -100,22 +108,22 @@
                 "Social Challenges": "Connect with friends, share achievements, and participate in friendly fitness challenges."
             };
 
-            // Function to handle card click for each feature
-            function handleCardClick(feature) {
-                alert(`Clicked on ${feature} card!`);
-                // You can replace the alert with any custom action you want
-            }
-
-            // Dynamically create feature cards
+            // Dynamically create feature cards and details
             Object.entries(mockFeatures).forEach(([feature, description]) => {
                 const featureCard = document.createElement("div");
                 featureCard.className = "featureCard";
-                featureCard.innerHTML = `
-                    <h3>${feature}</h3>
-                    <p>${description}</p>
-                `;
-                featureCard.addEventListener("click", () => handleCardClick(feature));
+                featureCard.innerHTML = `<h3>${feature}</h3>`;
                 featuresContainer.appendChild(featureCard);
+
+                const featureDetails = document.createElement("div");
+                featureDetails.className = "featureDetails";
+                featureDetails.innerHTML = `<p>${description}</p>`;
+                featuresContainer.appendChild(featureDetails);
+
+                // Toggle the display of feature details on card click
+                featureCard.addEventListener("click", function() {
+                    featureDetails.style.display = featureDetails.style.display === "none" ? "block" : "none";
+                });
             });
 
             // Event listener for user registration form
@@ -141,4 +149,5 @@
     </script>
 </body>
 </html>
+
 
