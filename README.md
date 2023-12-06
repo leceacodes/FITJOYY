@@ -86,9 +86,9 @@ In the course of developing FitJoy, we encountered some challenges and limitatio
   - Integrating different features was challenging because they had diverse functionalities. To solve this, we designed the system to be modular and scalable, ensuring that different features work well together and can be easily expanded in the future.
 
 - **Challenge 2: Visuals**
-   - We had trouble finding how to create the app aspect of the project, but ultimately decided to use some javascript, whih we had some prior knowledge of.
+   - We had trouble finding how to create the app aspect of the project, but ultimately decided to use some javascript code.
      
-Despite these challenges, the project allowed us to apply the course learnings in a practical context. For example, we used dictionaries, different methods, and classes for our project, to name a few, reinforcing our understanding of software development for enhancing happiness.
+Despite these challenges, the project allowed us to apply the course learnings in a practical context. For example, we used dictionaries, different methods, and classes for our project, to name a few. 
 
 FitJoy is the result of collaborative efforts to bring happiness to the fitness world. 
 
