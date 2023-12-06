@@ -83,16 +83,12 @@ We tested each functionality to ensure a seamless user experience. Here are the 
 In the course of developing FitJoy, we encountered some challenges and limitations:
 
 - **Challenge 1: Integration Complexity**  
-  - Integrating various features created challenges due to diverse functionalities. We implemented a modular and scalable architecture to address this, ensuring smooth integration and future extensibility.
+  - Integrating different features was challenging because they had diverse functionalities. To solve this, we designed the system to be modular and scalable, ensuring that different features work well together and can be easily expanded in the future.
 
-- **Challenge 2: User Onboarding Optimization**  
-  - Streamlining the user onboarding process was crucial for user retention. We conducted usability studies and implemented a step-by-step onboarding flow, resulting in increased user engagement.
-
-- **Challenge 3: Visuals**
+- **Challenge 2: Visuals**
    - We had trouble finding how to create the app aspect of the project, but ultimately decided to use some javascript, whih we had some prior knowledge of.
      
 Despite these challenges, the project allowed us to apply the course learnings in a practical context, reinforcing our understanding of software development for enhancing happiness.
 
-FitJoy is the result of collaborative efforts to bring happiness to the fitness realm. Join us in promoting a positive and joyful approach to wellness.
-
+FitJoy is the result of collaborative efforts to bring happiness to the fitness world. 
 
