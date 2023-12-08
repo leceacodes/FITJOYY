@@ -34,9 +34,9 @@ The FitJoy project is organized into the following directory structure:
 
 ![image](https://github.com/leceacodes/FITJOYY/assets/148807945/8175086b-af84-43e9-a8cd-5d384da6aa1b)
 
-- **backend:** This directory contains scripts related to the backend functionality of the FitJoy application. The `backend.py` file serves as the main script for the backend server, handling fitness-related features.
+- **backend:** This file contains code related to the backend functionality of the FitJoy application. The `backend.py` file serves as the main script for the backend server, handling fitness-related features.
 
-- **frontend:** This directory holds files related to the frontend user interface. The `index.html` file represents the main HTML file for users to interact with FitJoy.
+- **frontend:** This file holds files related to the frontend user interface. The `index.html` file represents the main HTML file for users to interact with FitJoy.
 
 - **README.md:** The README file provides an overview of the project, installation instructions, and documentation.
 
